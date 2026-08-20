@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faf8f5; /* warm neutral background */
+  --foreground: #1c1c1c; /* dark charcoal typography */
+  --primary: #c2410c; /* restrained accent color (orange-700) */
+  --primary-foreground: #ffffff;
+  --muted: #f5f2eb;
+  --muted-foreground: #525252;
+  --border: #e5e0d8;
+  --card: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* excellent typography, anti-aliased */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
